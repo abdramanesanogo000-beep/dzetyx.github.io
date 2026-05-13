@@ -1,0 +1,295 @@
+/* CECCI EST LA PARTIE SIMPLE CSS DU PROJET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: black;
+    color: white;
+    font-family: 'Manrope' , sans-serif ;
+
+}
+h1{
+    display: flex;
+    color: grey;
+    justify-content: center;
+    align-items: center;
+    padding: 32px ;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1a1a1a;
+    padding: 16px 32px;
+    gap:24px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+     transition: 0.3s;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: row;
+    gap: 50px;
+}
+.hero img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  
+}
+.paragraphe-accueil{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.paragraphe-accueil :first-child {
+    font-size: 32px;
+    font-weight: 800;
+    color: #9b59b6;
+   
+}
+.paragraphe-accueil a{
+    display: inline-block;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    margin:10px;
+    transition: 0.3s;
+}
+.paragraphe-accueil a:first-of-type{ 
+    background-color: #9b59b6;
+    color: white;
+}
+.paragraphe-accueil a:last-of-type{
+    color: #9b59b6;
+    border: 2px solid #9b59b6;
+}
+.about {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.about-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+}
+
+.about-texte h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #9b59b6;
+}
+
+.about-texte p {
+  color: #aaaaaa;
+  line-height: 1.8;
+}
+
+.about img{
+    width: 300px;
+    border-radius: 16px;
+}
+.contact {
+  padding: 80px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #9b59b6;
+}
+
+.contact p {
+  color: #aaaaaa;
+}
+
+.contact-liens {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.lien-contact a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #9b59b6;
+  padding: 12px 24px;
+  border-radius: 8px;
+   transition: 0.3s;
+ 
+}
+footer{
+    text-align: center;
+    padding: 24px;
+    color: #aaaaaa;
+    font: size 14px;
+    border-top: 2px solid #2a2a2a;
+}
+.skills {
+  display: flex;  
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  padding: 80px 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #9b59b6;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.carte {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  transition: 0.3s;
+  
+}
+
+.carte h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.carte p {
+  color: #9b59b6;
+  font-weight: 600;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10px;
+   
+}
+
+.project-h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #9b59b6;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.project div {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+   transition: 0.3s;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project p {
+  padding: 16px;
+  color: #aaaaaa;
+  line-height: 1.8;
+}
+
+.project a {
+  display: inline-block;
+  margin: 0 16px 16px 16px;
+  color: #9b59b6;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* CECI EST LA PARTIE HOVER DU PROJET */
+a:hover{
+    color: aqua;
+
+}
+.carte:hover{
+    transform: translateY(-4px);
+    border-color: #9b59b6;
+}
+.project div:hover{
+    border-color: #9b59b6;
+}
+.lien-contact a:hover{
+    background-color: #9b59b6;
+    color: white;
+    
+}
+.paragraphe-accueil a:hover{
+    transform: translateY(-4px);
+
+}
+/* CECI EST LA PARTIE RESPONSIVE */
+@media (max-width: 768px) {
+   nav {
+    justify-content: center;
+    gap: 16px;
+   }
+.hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+}
+.hero img {
+  margin-top: 100px;
+}
+.about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+}
+.about img{
+    width: 200px;
+    margin: 100px;
+}
+.lien-contact{
+    flex-direction: column;
+    align-items: center;
+}
+.carte{
+    justify-content: center;
+}
+.project-div{
+width: 100%;
+}
+.project-h2{
+    justify-content: center;
+    align-items: center;
+}
+.skills{
+    padding: 40px 20px; 
+}
+.project{
+    padding: 40px 20px; 
+
+}
+}
