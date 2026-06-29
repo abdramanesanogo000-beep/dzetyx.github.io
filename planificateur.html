@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>systeme de planification</title>
+    <link rel="stylesheet" href="planificateur.css">
+    <script src="planificateur.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Mon système de planification
+        </h1>
+        <p>
+            vendredi 22 Mai 2026
+        </p>
+    </header>
+    <section class="temps-disponible">
+        <h2>Temps disponible aujourd'hui</h2>
+        <label for="temps-disponible">Temps disponible (en heures)</label>
+        <div class="input-group">
+            <input type="number" id="temps-disponible">
+            <button id="btn-confirmer">Confirmer</button>
+            <button id="btn-modifier" style="display:none">Modifier</button>
+        </div>
+    </section>
+
+    <section class="skill-principale">
+        <h2>Compétence principale</h2>
+        <div class="competence">
+            <p>Code <span class="temps">0h</span></p>
+            <textarea name="textarea-skills" class="comentaire" placeholder="Ajouter un commentaire..."></textarea>
+        </div>
+        <div class="competence">
+            <p>Jeux <span class="temps">0h</span></p>
+            <textarea name="textarea-skills" class="comentaire" placeholder="Ajouter un commentaire..."></textarea>
+        </div>
+        <div class="competence">
+            <p>Sport <span class="temps">0h</span></p>
+            <textarea name="textarea-skills" class="comentaire" placeholder="Ajouter un commentaire..."></textarea>
+        </div>
+        <div class="competence">
+            <p>Philosophie <span class="temps">0h</span></p>
+            <textarea name="textarea-skills" class="comentaire" placeholder="Ajouter un commentaire..."></textarea>
+        </div>
+
+        <div class="ajouter-competence">
+            <input type="text" id="nouvelle-competence" placeholder="Nouvelle compétence...">
+            <button id="btn-ajouter">+</button>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
